@@ -36,7 +36,7 @@ function sendDataToGetfly(row) {
     phone_office: data[2], // Cột 3: Số điện thoại
     account_manager: data[4], // Cột 5: Người phụ trách khách hàng
     custom_fields: {
-      google_sheet_test: [3] // Cột 4: Trường thông tin tự tạo
+      google_sheet_test: data[3] // Cột 4: Trường thông tin tự tạo
     },
   };
   Logger.log(JSON.stringify(payload, null, 2)); // In payload dưới dạng JSON đẹp
