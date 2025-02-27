@@ -10,7 +10,7 @@ function onEdit(e) {
     const data = sheet.getRange(row, 1, 1, sheet.getLastColumn()).getValues()[0];
 
     // Kiểm tra nếu tất cả các cột cần thiết đã được điền
-    if (data[0] && data[1] && data[2] && data[3]) { // Kiểm tra cột 1 (Tên), cột 2 (Email), cột 3 (Số điện thoại), cột 4 (người phụ trách)
+    if (data[0] && data[1] && data[2] && data[3] && data[4]) { // Kiểm tra cột 1 (Tên), cột 2 (Email), cột 3 (Số điện thoại), cột 4 (Trường thông tin thêm mới), cột 5 (Người phụ trách)
       sendDataToGetfly(row); // Gửi dữ liệu của dòng được chỉnh sửa
     } else {
       Logger.log(`Dữ liệu dòng ${row} chưa đầy đủ, không gửi.`);
